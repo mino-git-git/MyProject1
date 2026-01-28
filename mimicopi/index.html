@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ピアノスケール特定ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="topbar">
+                <h1>ピアノスケール特定ツール</h1>
+            </div>
+            <div>
+                <button id="resetBtn" class="reset">リセット</button>
+            </div>
+        </header>
+
+        <section class="scale-area" aria-live="polite">
+            <div class="scale-block">
+                <h2>メジャー</h2>
+                <div id="majorList" class="scale-list"></div>
+            </div>
+            <div class="scale-block">
+                <h2>マイナー</h2>
+                <div id="minorList" class="scale-list"></div>
+            </div>
+        </section>
+
+        <section class="keyboard-area">
+            <div class="led-row" id="ledRow"></div>
+            <div id="keyboard" class="keyboard" aria-label="ピアノキーボード"></div>
+            <div class="note-labels" id="noteLabels"></div>
+        </section>
+
+        <footer class="footer">
+            <small>タップ/クリックで鍵盤をON/OFF。スケール名をクリックするとそのスケールの音を設定します。</small>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
